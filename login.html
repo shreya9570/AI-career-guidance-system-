@@ -5,48 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - AI Career Pathway</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* Add styling for form fields */
-        input[type="text"], input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px; /* Adds spacing between fields */
-            border-radius: 5px;
-            border: 1px solid #1f1b1b;
-        }
-
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: rgb(32, 45, 32);
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        /* Add some padding to the content box */
-        .content-box {
-            max-width: 400px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: rgb(229, 223, 223);
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Style for the header and footer */
-        header, footer {
-            background-color: rgb(31, 3, 8);
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1, footer p {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -55,9 +13,9 @@
     </header>
     <main>
         <div class="content-box">
-            <form action="your-login-processing-url" method="POST">
+            <form id="loginForm">
                 <label for="email">Email:</label>
-                <input type="text" id="email" name="email" value="shreya" required><br>
+                <input type="text" id="email" name="email" required><br>
 
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required><br>
@@ -72,5 +30,7 @@
     <footer>
         <p>&copy; 2024 AI Career Pathway. All rights reserved.</p>
     </footer>
+
+    <script src="scriptss.js"></script>
 </body>
 </html>
